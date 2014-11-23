@@ -20,9 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## checks if input matrix is already stored as object and retrieves its inverse from 
-## cache. If not then inverse will be calculated and an object will be created by
-## calling the makeCacheMatrix methods.
+## checks if input matrix's inverse is already stored in the object and retrieves it from 
+## cache by calling makeCacheMatrix"s getinverse method. If not then the inverse will be 
+## calculated and added to the object by calling the makeCacheMatrix methods.
 
 cacheSolve <- function(x, ...) {        
     inv <- x$getinverse() 
